@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gemini AI Chatbot</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-dark.min.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Gemini AI Chatbot</h1>
+      <button id="clear-chat">Clear Chat</button>
+    </div>
+    <div id="chat-box" class="chat-box"></div>
+    <div id="attachment-preview-container"></div>
+    <form id="chat-form">
+      <input type="file" id="file-input" accept="image/*,audio/*,application/pdf" style="display: none;">
+      <button type="button" id="attach-file-btn" title="Attach File">+</button>
+      <input type="text" id="user-input" placeholder="Type your message..." autocomplete="off" />
+      <button type="button" id="mic-btn" title="Use Voice Input">🎤</button>
+      <button type="submit" id="send-btn">Send</button>
+    </form>
+    <footer class="app-caption">
+      Gemini AI Chatbot by RobinCode
+    </footer>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/dompurify@3.0.11/dist/purify.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
